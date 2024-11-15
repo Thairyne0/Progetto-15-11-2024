@@ -72,10 +72,57 @@
       </nav>
     </header>
 
-    <main>
-      <div class="container rounded bg-info-subtle rounded p-5 my-5">
-        <div id="divImg" class="row justify-content-center"></div>
-        <div id="divContenuto" class="row justify-content-center mt-3"></div>
+    <main class="mt-5">
+      <div class="container bg-info-subtle rounded p-5">
+        <div class="row">
+          <form id="myform">
+            <div class="mb-3">
+              <label for="inputTitle" class="form-label">Url Immagine</label>
+              <input type="name" class="form-control" id="urlImage" />
+            </div>
+            <div class="mb-3">
+              <label for="inputTitle" class="form-label"
+                >Nome del prodotto</label
+              >
+              <input type="name" class="form-control" id="inputTitle" />
+            </div>
+            <div class="mb-3">
+              <div class="input-group">
+                <span class="input-group-text">Descrizione</span>
+                <textarea
+                  class="form-control"
+                  aria-label="With textarea"
+                  id="inputDescrizione"
+                ></textarea>
+              </div>
+            </div>
+            <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck"
+              />
+              <label class="form-check-label" for="exampleCheck"
+                >Confermo la modifica di questo prodotto</label
+              >
+            </div>
+            <div class="row row-cols-2">
+              <div class="col">
+                <div class="mb-3">
+                  <label for="inputTitle" class="form-label">Prezzo ($)</label>
+                  <input type="name" class="form-control" id="priceInput" />
+                </div>
+              </div>
+              <div class="col">
+                <div class="mb-3">
+                  <label for="inputTitle" class="form-label">Brand</label>
+                  <input type="name" class="form-control" id="brandName" />
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Modifica</button>
+          </form>
+        </div>
       </div>
     </main>
 
@@ -84,6 +131,7 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="./JS/productLogic.js"></script>
+
+    <script src="./JS/modificaOggettoLogic.js"></script>
   </body>
 </html>

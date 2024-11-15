@@ -10,8 +10,122 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
   </head>
   <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-info-subtle">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand text-warning border border-1 border-warning rounded p-2 bg-warning-subtle"
+            href="./home.html"
+            >TOMMAZON</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./home.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Carrello</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link text-warning fw-bold"
+                  href="./backoffice.html"
+                  >Aggiungi Prodotto</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Cerca"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-warning" type="submit">
+                <i class="bi bi-search-heart-fill"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="mt-5">
+      <div class="container bg-info-subtle rounded p-5">
+        <div class="row">
+          <form id="myform">
+            <div class="mb-3">
+              <label for="inputTitle" class="form-label">Url Immagine</label>
+              <input type="name" class="form-control" id="urlImage" />
+            </div>
+            <div class="mb-3">
+              <label for="inputTitle" class="form-label"
+                >Nome del prodotto</label
+              >
+              <input type="name" class="form-control" id="inputTitle" />
+            </div>
+            <div class="mb-3">
+              <div class="input-group">
+                <span class="input-group-text">Descrizione</span>
+                <textarea
+                  class="form-control"
+                  aria-label="With textarea"
+                  id="inputDescrizione"
+                ></textarea>
+              </div>
+            </div>
+            <div class="mb-3 form-check">
+              <input
+                type="checkbox"
+                class="form-check-input"
+                id="exampleCheck"
+              />
+              <label class="form-check-label" for="exampleCheck"
+                >Confermo l'aggiunta di questo prodotto</label
+              >
+            </div>
+            <div class="row row-cols-2">
+              <div class="col">
+                <div class="mb-3">
+                  <label for="inputTitle" class="form-label">Prezzo ($)</label>
+                  <input type="name" class="form-control" id="priceInput" />
+                </div>
+              </div>
+              <div class="col">
+                <div class="mb-3">
+                  <label for="inputTitle" class="form-label">Brand</label>
+                  <input type="name" class="form-control" id="brandName" />
+                </div>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary">Aggiungi</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
