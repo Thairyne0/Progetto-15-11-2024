@@ -90,6 +90,7 @@ fetch("https://striveschool-api.herokuapp.com/api/product/", {
 
     for (let i = 0; i < buttonsBuy.length; i++) {
       buttonsBuy[i].addEventListener("click", function (event) {
+        console.log(event);
         event.defaultPrevented;
         let posizioneTratto = event.target.id.indexOf("_");
         let idProdotto = event.target.id.slice(posizioneTratto + 1);
